@@ -1,6 +1,8 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image";
+
 import { useState } from "react"
 import { Menu, ShoppingBag, Search, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -24,15 +26,21 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="flex flex-col">
-              <span className="text-2xl font-semibold tracking-wider text-primary">ESMERALDA</span>
-              <span className="text-xs tracking-[0.3em] text-muted-foreground font-[family-name:var(--font-montserrat)]">
-                LUXE JEWELRY
-              </span>
-            </div>
-          </Link>
-
+              <Link href="/" className="flex items-center gap-2">
+                <Image 
+                  src="/logo2.png" 
+                  alt="Logo Esmeralda" 
+                  width={50} 
+                  height={50} 
+                  className="rounded-full"
+                />
+                <div className="flex flex-col">
+                  <span className="text-2xl font-semibold tracking-wider text-primary">ESMERALDA</span>
+                  <span className="text-xs tracking-[0.3em] text-muted-foreground font-[family-name:var(--font-montserrat)]">
+                    Herencia san Martin esmeraldas
+                  </span>
+                </div>
+              </Link>
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-8">
             {navigation.map((item) => (

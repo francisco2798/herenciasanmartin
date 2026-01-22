@@ -11,7 +11,7 @@ export function Footer() {
             <div className="flex flex-col">
               <span className="text-2xl font-semibold tracking-wider">ESMERALDA</span>
               <span className="text-xs tracking-[0.3em] text-background/60 font-[family-name:var(--font-montserrat)]">
-                LUXE JEWELRY
+                Herencia san Martin esmeraldas
               </span>
             </div>
             <p className="text-sm text-background/70 leading-relaxed font-[family-name:var(--font-montserrat)]">
@@ -98,7 +98,7 @@ export function Footer() {
         <div className="border-t border-background/20 mt-12 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-background/60 font-[family-name:var(--font-montserrat)]">
-              © 2025 Esmeralda Luxe. Todos los derechos reservados.
+              © 2025 Herencia san Martin esmeraldas. Todos los derechos reservados.
             </p>
             <div className="flex items-center gap-6 text-sm text-background/60 font-[family-name:var(--font-montserrat)]">
               <Link href="/privacidad" className="hover:text-background transition-colors">

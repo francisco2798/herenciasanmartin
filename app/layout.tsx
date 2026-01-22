@@ -18,7 +18,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Esmeralda Luxe | Joyería de Alta Gama",
+  title: "Herencia san Martin esmeraldas",
   description:
     "Descubre nuestra exclusiva colección de joyería de lujo con esmeraldas colombianas y metales preciosos. Piezas únicas diseñadas para quienes aprecian la excelencia.",
   keywords: [
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
     "anillos de compromiso",
     "collares de esmeraldas",
   ],
-  authors: [{ name: "Esmeralda Luxe" }],
+  authors: [{ name: "Esmeralda Herencia san Martin esmeraldas" }],
   openGraph: {
-    title: "Esmeralda Luxe | Joyería de Alta Gama",
+    title: "Herencia san Martin esmeraldas",
     description: "Exclusiva colección de joyería con esmeraldas colombianas",
     type: "website",
   },
-    generator: 'v0.app'
+    generator: 'Francisco Gaviria Jimenez'
 }
 
 export const viewport: Viewport = {
