@@ -123,3 +123,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+.embla {
+  overflow: hidden;
+  height: 100%;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%; /* cada slide ocupa todo el ancho */
+  position: relative;
+  height: 100vh;   /* cada slide ocupa toda la pantalla */
+}

@@ -35,9 +35,9 @@ export function Header() {
                   className="rounded-full"
                 />
                 <div className="flex flex-col">
-                  <span className="text-2xl font-semibold tracking-wider text-primary">ESMERALDA</span>
+                  <span className="text-2xl font-semibold tracking-wider text-primary">ESMERALDAS</span>
                   <span className="text-xs tracking-[0.3em] text-muted-foreground font-[family-name:var(--font-montserrat)]">
-                    Herencia san Martin esmeraldas
+                    Herencia san Martin
                   </span>
                 </div>
               </Link>
@@ -61,10 +61,14 @@ export function Header() {
               <span className="sr-only">Buscar</span>
             </Button>
 
+            <Link href="/admin">
+
             <Button variant="ghost" size="icon" className="hidden sm:flex">
               <User className="h-5 w-5" />
-              <span className="sr-only">Mi cuenta</span>
+              <span className="sr-only"> cuenta </span>
             </Button>
+
+            </Link>
 
             <Link href="/carrito">
               <Button variant="ghost" size="icon" className="relative">

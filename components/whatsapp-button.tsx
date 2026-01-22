@@ -9,7 +9,7 @@ interface WhatsAppButtonProps {
 }
 
 export function WhatsAppButton({ productName, fixed = true }: WhatsAppButtonProps) {
-  const phoneNumber = "573001234567"
+  const phoneNumber = "573135043974"
   const message = productName
     ? `Hola, estoy interesado/a en el producto: ${productName}. ¿Podrían darme más información?`
     : "Hola, me gustaría obtener más información sobre su joyería."
