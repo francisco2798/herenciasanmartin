@@ -50,3 +50,46 @@ export interface FilterOptions {
   priceRange: [number, number]
   inStock: boolean | null
 }
+
+export interface CompanyInfo {
+  name: string
+  logo: string
+  email: string
+  phone: string
+  address: string
+  catalogTitle: string
+  website?: string
+  slogan?: string
+}
+
+export type JewelryCategory = 
+  | 'Anillos' 
+  | 'Pulseras' 
+  | 'Topos' 
+  | 'Aretes' 
+  | 'Cadenas' 
+  | 'Collares' 
+  | 'Pendientes'
+
+export type JewelryMaterial = 
+  | 'Oro 18K' 
+  | 'Oro 24K' 
+  | 'Plata 925' 
+  | 'Platino'
+
+export const JEWELRY_CATEGORIES: JewelryCategory[] = [
+  'Anillos',
+  'Pulseras',
+  'Topos',
+  'Aretes',
+  'Cadenas',
+  'Collares',
+  'Pendientes',
+]
+
+export const JEWELRY_MATERIALS: JewelryMaterial[] = [
+  'Oro 18K',
+  'Oro 24K',
+  'Plata 925',
+  'Platino',
+]

@@ -61,7 +61,7 @@ export function Header() {
               <span className="sr-only">Buscar</span>
             </Button>
 
-            <Link href="/admin">
+            <Link href="/login">
 
             <Button variant="ghost" size="icon" className="hidden sm:flex">
               <User className="h-5 w-5" />
