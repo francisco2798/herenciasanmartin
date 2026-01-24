@@ -71,13 +71,13 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold tracking-wide">Contacto</h3>
             <ul className="space-y-3 font-[family-name:var(--font-montserrat)]">
-              <li className="flex items-center gap-3 text-sm text-background/70">
+              <li className="flex items-center gap-3 text-sm text-background/70 min-w-[250px]">
                 <Phone className="h-4 w-4" />
                 <span>+57 (1) 234-5678</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-background/70">
-                <Mail className="h-4 w-4" />
-                <span>contacto@esmeraldaluxe.com</span>
+                <Mail className="h-4 w-4 shrink-0" />
+                <span> herenciasanmartinesmeraldas@gmail.com</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-background/70">
                 <MapPin className="h-4 w-4 mt-0.5" />

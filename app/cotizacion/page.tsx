@@ -29,16 +29,32 @@ function CotizacionForm() {
     }
   }, [productId])
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+  const formData = new FormData(e.currentTarget as HTMLFormElement);
+  const data = Object.fromEntries(formData.entries());
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+  try {
+    const res = await fetch("/api/sendQuote", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (res.ok) {
+      setIsSubmitted(true);
+    } else {
+      alert("Error al enviar la solicitud");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Error de conexión");
+  } finally {
+    setIsSubmitting(false);
   }
+};
 
   if (isSubmitted) {
     return (
