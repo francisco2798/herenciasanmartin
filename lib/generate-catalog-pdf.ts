@@ -301,9 +301,9 @@ export async function generateCatalogPDF(
       const imgY = yPosition + 5
       const imgSize = 55
 
-      if (product.images && product.images.length > 0) {
+      if (product.image) {
         try {
-          const imgBase64 = await loadImageAsBase64(product.images[0])
+          const imgBase64 = await loadImageAsBase64(product.image)
           if (imgBase64) {
             // Marco dorado para la imagen
             doc.setDrawColor(COLORS.gold.r, COLORS.gold.g, COLORS.gold.b)
@@ -327,7 +327,7 @@ export async function generateCatalogPDF(
       doc.setFontSize(8)
       doc.setFont("helvetica", "bold")
       doc.setTextColor(COLORS.gold.r, COLORS.gold.g, COLORS.gold.b)
-      doc.text(`REF: ${product.sku || "N/A"}`, textX, textY)
+      doc.text(`REF: ${product.code || "N/A"}`, textX, textY)
 
       // Nombre del producto
       textY += 8
@@ -369,7 +369,18 @@ export async function generateCatalogPDF(
         doc.text(`  |  Peso: ${product.weight}`, textX + 55, textY)
       }
 
-      // ...no hay materiales disponibles en Product, se omite este bloque...
+      // Materiales disponibles
+      textY += 7
+      doc.setFontSize(8)
+      doc.setFont("helvetica", "normal")
+      doc.setTextColor(COLORS.gray.r, COLORS.gray.g, COLORS.gray.b)
+      if (product.availableMaterials && product.availableMaterials.length > 0) {
+        doc.text(
+          `Disponible en: ${product.availableMaterials.join(", ")}`,
+          textX,
+          textY
+        )
+      }
 
       // Descripción
       textY += 7

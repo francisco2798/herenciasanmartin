@@ -56,7 +56,7 @@ export default function AdminConfiguracionPage() {
                   </Label>
                   <Input
                     id="storeName"
-                    defaultValue="Esmeralda Luxe"
+                    defaultValue="Esmeraldas Herencia San Martin"
                     className="font-[family-name:var(--font-montserrat)]"
                   />
                 </div>

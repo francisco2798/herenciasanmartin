@@ -73,7 +73,7 @@ export function Footer() {
             <ul className="space-y-3 font-[family-name:var(--font-montserrat)]">
               <li className="flex items-center gap-3 text-sm text-background/70 min-w-[250px]">
                 <Phone className="h-4 w-4" />
-                <span>+57 (1) 234-5678</span>
+                <span>+57 3008609538</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-background/70">
                 <Mail className="h-4 w-4 shrink-0" />
@@ -81,7 +81,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3 text-sm text-background/70">
                 <MapPin className="h-4 w-4 mt-0.5" />
-                <span>Calle 82 #11-75, Bogotá, Colombia</span>
+                <span>Calle 82 #11-75, chia-bogota,Colombia</span>
               </li>
             </ul>
             <div className="flex items-center gap-4 pt-2">

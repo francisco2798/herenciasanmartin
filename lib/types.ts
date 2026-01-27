@@ -18,13 +18,15 @@ export interface Product {
   createdAt: string
 }
 
+// types/collection.ts
 export interface Collection {
-  id: string
-  name: string
-  slug: string
-  description: string
-  image: string
-  season: string
+  id: string;
+  name: string;
+  slug: string;
+  description: string;
+  image: string ;
+  season: string ;
+  file_path?: string ;
 }
 
 export interface CartItem {
